@@ -39,8 +39,8 @@ body{
 #container{
     display: flex;
     flex-direction: column;
-    /* margin: 30px; */
-    padding:30px;
+    margin: 60px 30px;
+    /* padding:80px; */
 }
 
 .avatar{
@@ -104,6 +104,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 360px;
+    margin: 20px;
 }
 
 .link-buttom{
@@ -127,32 +128,15 @@ body{
 
 }
 
+.link-buttom > a i{
+    margin-right: 11px;
+}
+
 .link-buttom > a:hover{
     background-color:var(--strok-color);
     font-weight: bolder;
     color: var(--text-color);
 }
-
-
-
-/* .red > a:hover{
-    background-color: rgba(255, 0, 0, 0.685);
-}
-
-.blue > a:hover{
-    background-color: rgba(0, 0, 255, 0.603);
-}
-
-.yellow > a:hover{
-    background-color: rgba(212, 212, 0, 0.644);
-}
-
-.orange > a:hover{
-    background-color: rgba(255, 166, 0, 0.678);
-} */
-
-
-
 
 
 .log-redeSociais{
@@ -201,4 +185,30 @@ footer > p{
     width: 100%;
     text-align: center;
     font-size: 1rem;
+}
+
+
+
+@media screen and (max-width:600px){
+    .avatar > img{
+        width: 7rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+
+    .link-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        margin: 20px;
+    }
+
+    .link-buttom{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 310px;
+    }
 }
