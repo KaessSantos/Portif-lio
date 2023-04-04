@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* aqui criei as variaveis para ultilizar tanto no modo light e qaunto no modo dark  */
+:root{ 
+    --text-color: white;
+    --bg-url:url(img/bg-mobile.jpg);
+    --strok-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255,255,255, 0.1);
+}
+
+.light{
+    --text-color:black;
+    --bg-url:url(img/bg-mobile-light.jpg);
+    --strok-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0,0,0, 0.1);
+}
+
+
+body{
+    font-family:'Poppins', sans-serif ;
+    background: var(--bg-url);
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    /* margin: 30px; */
+    padding: 0 30px;
+}
+
+.avatar{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin: 24px;
+}
+
+.avatar > span{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.avatar > img{
+    width: 11rem;
+    border-radius: 50%;
+}
+
+#switch{
+    position: relative;
+    margin: 24px;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform:translateY(-50%);
+    cursor: pointer;
+}
+.light #switch button{
+    right: 0;
+    left: initial;
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--strok-color);
+    border-radius: 9999px;
+}
+
+
+
+.link-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.link-buttom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.link-buttom > a{
+    background-color:var(--surface-color) ;
+    border: 1.5px solid var(--strok-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition:background 0.5s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+
+}
+
+.link-buttom > a:hover{
+    background-color:var(--strok-color);
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+
+
+/* .red > a:hover{
+    background-color: rgba(255, 0, 0, 0.685);
+}
+
+.blue > a:hover{
+    background-color: rgba(0, 0, 255, 0.603);
+}
+
+.yellow > a:hover{
+    background-color: rgba(212, 212, 0, 0.644);
+}
+
+.orange > a:hover{
+    background-color: rgba(255, 166, 0, 0.678);
+} */
+
+
+
+
+
+.log-redeSociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.log-redeSociais > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 23px;
+    list-style: none;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition:ease 0.5s;
+}
+
+
+.log-redeSociais > a:hover{
+    background-color: var(--surface-color);
+}
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+
+footer > p{
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
