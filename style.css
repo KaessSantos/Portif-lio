@@ -49,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 7px;
-  margin: 24px;
+  margin-bottom: 10px;
 }
 
 .avatar > span {
@@ -103,7 +103,7 @@ body {
   flex-direction: column;
   width: 100vw;
   max-width:588px;
-  margin: 30px;
+  margin: 15px;
 }
 
 .link-buttom {
@@ -144,7 +144,7 @@ body {
   justify-content: center;
   gap: 7px;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 25px;
 }
 
 .log-redeSociais > a {
@@ -177,6 +177,7 @@ footer > p {
   width: 100%;
   text-align: center;
   font-size: 1rem;
+  padding: 5px;
 }
 
 @media screen and (min-width: 700px){
