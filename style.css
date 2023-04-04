@@ -59,7 +59,7 @@ body {
 }
 
 .avatar > img {
-  width: 11rem;
+  width: 10rem;
   border-radius: 50%;
   border: 3px solid #fff;
 }
@@ -179,7 +179,7 @@ footer > p {
 
 @media screen and (max-width: 600px) {
   .avatar > img {
-    width: 12rem;
+    /* width: 10rem; */
     border-radius: 50%;
     border: 3px solid #fff;
     margin-top: 6rem;
